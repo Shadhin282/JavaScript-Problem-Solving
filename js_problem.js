@@ -65,3 +65,32 @@ const str = "i love you";
 const countVow = countVowel(str);
 
 console.log("Number of Vowel in a String : ",countVow);
+
+// Task-4:
+// Write a function to find the longest word in a given string.
+
+// sample-input: I am learning Programming to become a programmer
+
+// sample-output: Programming
+
+function longWord(strings){
+    let string = strings;
+    let strWrd = string.split(' ');
+    let max = strWrd[0].length
+    for(const str of strWrd){
+        
+       if(str.length > max){
+         max = str.length ;
+       } 
+    }
+    
+    for(const str of strWrd){
+        if(str.length ===max){
+           longWord = str;
+        }
+    }
+    return longWord ;
+}
+
+let lstring = "I am learning Programming to become a programmer";
+console.log(longWord(lstring));
