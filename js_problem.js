@@ -94,3 +94,15 @@ function longWord(strings){
 
 let lstring = "I am learning Programming to become a programmer";
 console.log(longWord(lstring));
+
+// Task-5:
+// Generate a random number between 10 to 20.
+
+function randNum(){
+
+
+    return Math.floor(Math.random() * 10);
+}
+
+const RandomNum = randNum();
+console.log(RandomNum);
