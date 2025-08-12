@@ -46,3 +46,22 @@ console.log("Find : ", findNum);
 const countRepeatNum = countNumber(numbers, findNum);
 
 console.log("Count : ", countRepeatNum);
+
+// Task-3:
+// Write a function to count the number of vowels in a string.
+
+function countVowel(strings){
+    let count = 0;
+
+    for (const string of strings){
+        if(string ==="a" || string ==="e" || string === "o" || string === "u" || string === "i"){
+        count = count + 1;
+    }
+    }
+    return count;
+}
+
+const str = "i love you";
+const countVow = countVowel(str);
+
+console.log("Number of Vowel in a String : ",countVow);
