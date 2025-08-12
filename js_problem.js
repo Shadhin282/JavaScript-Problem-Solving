@@ -106,3 +106,50 @@ function randNum(){
 
 const RandomNum = randNum();
 console.log(RandomNum);
+
+
+/**   Problem Solving Task 2 */
+
+// Task -1:
+// Find the lowest number in the array below.
+// const heights2 = [167, 190, 120, 165, 137];
+
+function lowestNum(numbers){
+    let min = numbers[0];
+    for(const num of numbers){
+        if(num < min){
+            min = num
+        }
+    }
+    
+    return min;
+}
+
+let heights = [167, 190, 120, 165, 137];
+let lowestHeight = lowestNum(heights);
+
+console.log(lowestHeight);
+
+// Task -2:
+// Find the friend with the smallest name.
+// const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+
+function smallestName(height2){
+     let smallName = height2[0].length;
+
+     for(const sm of height2){
+        if(sm.length < smallName){
+            smallName = sm.length;
+        }
+     }
+    for(const sm of height2){
+        if(sm.length === smallName){
+            smallName = sm;
+        }
+    }
+    console.log(smallName);
+}
+
+const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+smallestName(heights2);
+
